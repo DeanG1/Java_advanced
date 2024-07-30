@@ -17,6 +17,6 @@ public class HotPotato {
 
             System.out.println("Removed " + queue.poll());
         }
-        System.out.println("Last is " + queue.poll());
+        System.out.println("The last is " + queue.poll());
     }
 }
