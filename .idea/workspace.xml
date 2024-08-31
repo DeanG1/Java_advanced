@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11406d10-6ff9-4cf5-a075-a402893b0c42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-    </list>
+    <list default="true" id="11406d10-6ff9-4cf5-a075-a402893b0c42" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,9 +43,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Hot-Potato",
+    "git-widget-placeholder": "Multidimensional-Arrays",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PC/OneDrive/Работен плот/WebDevProjects/Backend/Java Advanced/Stack and Queues",
+    "last_opened_file_path": "C:/Users/PC/OneDrive/Работен плот/WebDevProjects/Backend/Java Advanced",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +78,7 @@
       <workItem from="1721640478231" duration="33000" />
       <workItem from="1722331191795" duration="556000" />
       <workItem from="1724752347375" duration="323000" />
+      <workItem from="1725110288493" duration="79000" />
     </task>
     <servers />
   </component>
