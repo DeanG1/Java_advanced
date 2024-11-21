@@ -43,9 +43,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Multidimensional-Arrays",
+    "git-widget-placeholder": "Grades",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PC/OneDrive/Работен плот/WebDevProjects/Backend/Java Advanced",
+    "last_opened_file_path": "D:/Java/Softuni Java/Java Advanced",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +79,7 @@
       <workItem from="1722331191795" duration="556000" />
       <workItem from="1724752347375" duration="323000" />
       <workItem from="1725110288493" duration="79000" />
+      <workItem from="1731870014587" duration="18000" />
     </task>
     <servers />
   </component>
