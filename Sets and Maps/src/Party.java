@@ -3,32 +3,42 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class Party {
-    public static void main(String[] args){
-        Set<String> vip = new TreeSet<String>();
-        Set<String> regular = new TreeSet<String>();
-        Scanner sc = new Scanner(System.in);
-        String guest = sc.nextLine();
+    public static void main(String[] args) {
+        Set<String> VIP = new TreeSet<>();
+        Set<String> regular = new TreeSet<>();
+        Scanner scanner = new Scanner(System.in);
 
-        while(!"PARTY".equals(guest)){
-            if(Character.isDigit(guest.charAt(0))){
-                vip.add(guest);
-            }
-            else{
+        // Reading reservation numbers until "PARTY"
+        String guest = scanner.nextLine();
+        while (!"PARTY".equals(guest)) {
+            if (Character.isDigit(guest.charAt(0))) {
+                VIP.add(guest);
+            } else {
                 regular.add(guest);
             }
-            guest = sc.nextLine();
+            guest = scanner.nextLine();
         }
-        while(!"END".equals(guest)){
-            vip.remove(guest);
-            regular.remove(guest);
-            guest = sc.nextLine();
+
+        // Guests start arriving
+        guest = scanner.nextLine();
+        while (!"END".equals(guest)) {
+            if (VIP.contains(guest)) {
+                VIP.remove(guest);
+            } else if (regular.contains(guest)) {
+                regular.remove(guest);
+            }
+            guest = scanner.nextLine();
         }
-        System.out.println(vip.size() + regular.size());
-        for(String vipGuest: vip){
-            System.out.println(vipGuest);
+
+        // Print the count of absent guests
+        System.out.println(VIP.size() + regular.size());
+
+        // Print VIP guests who didn't come, followed by regular guests
+        for (String vip : VIP) {
+            System.out.println(vip);
         }
-        for(String regularGuest: regular){
-            System.out.println(regularGuest);
+        for (String reg : regular) {
+            System.out.println(reg);
         }
     }
 }
