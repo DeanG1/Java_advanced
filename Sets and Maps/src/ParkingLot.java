@@ -1,40 +1,34 @@
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 
-public class ParkingLot {
-    public static void main(String[] args) {
+public class ParkingLot{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         LinkedHashSet<String> parkingLot = new LinkedHashSet<>();
-        System.out.println("To add or remove a car enter: IN, car number/ OUT, car number");
-
+        System.out.println("To enter or remove a car -> IN, car number/OUT, car number");
         while(true){
-            String carNumber = scanner.nextLine();
-            if(carNumber.equals("END")){
+            String line = scanner.nextLine();
+            if(line.equals("END")){
                 break;
             }
             else{
-                String[] reminder = carNumber.split(", ");
-                String direction = reminder[0];
-                String number = reminder[1];
-                if(reminder[0].equals("IN")){
-                    parkingLot.add(number);
-                    System.out.println("Car " + carNumber + " entered the parking lot.");
+                String[] storage = line.split(", ");
+                String direction = storage[0];
+                String car = storage[1];
+                if(direction.equals("IN")){
+                    parkingLot.add(car);
                 }
-                else if(reminder[0].equals("OUT")){
-                    if(parkingLot.contains(number)){
-                        parkingLot.remove(number);
-                        System.out.println("Car " + carNumber + " removed the parking lot.");
-                    }
-                    else{
-                        System.out.println("Car with " + number + " does not exist.");
-                    }
+                else if(direction.equals("OUT") && parkingLot.contains(car)){
+                    parkingLot.remove(car);
+                }
+                else{
+                    System.out.println("There is no parking lot with car number " + car);
                 }
             }
         }
+        System.out.println("Parking lot is " + parkingLot);
         if(parkingLot.isEmpty()){
-            System.out.println("Parking Lot is empty.");
+            System.out.println("Parking Lot is Empty");
         }
-        System.out.println("Parking lot is: " + parkingLot);
-
     }
 }
